@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+       
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="quizzes.html">Quizzes</a></li>
+           <li><a href="projects.html">Projects</a></li>
+           <li><a href="contacts.html">Contacts</a></li>
+ 
+        </ul>
+      </nav> 
+
+      <div class="quiz-gallery">
+        <img src="n.jpeg" alt="ME">
+        </div>
+
+  <h1>About Me</h1>
+  <h3>"Hi I'm Rhea Mae who loves to play basketball and cooking. I'm always looking to learn and grow. I enjoy connecting with like-minded people, so feel free to reach out."</h3>
+<br>
+
+<button class="resume-button" onclick="openModal()">View My Resume</button>
+
+
+                <!-- Resume Modal -->
+                <div id="resumeModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="resumeImage" src="Resume.jpg" alt="My Resume" onclick="toggleZoom(this)">
+
+                </div>
+
+<br>
+<br>
+  <section>
+    <h2>Sports</h2>
+    <ul>
+        <div class="about-gallery">
+        <img src="basketball.jpg" alt="basketball"></div>  
+        <li>Basketball
+        <ul><li>3x3</li></ul>
+      
+      </li>
+     
+        <div class="about-gallery">
+          <img src="athletics.jpg" alt="athletics"></div>  
+          <li>Athletics
+        <ul><li>Track and Field</li></ul>
+
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Fav Foods</h2>
+    <ul>
+      <li>Adobo</li>
+      <li>Chicken</li>
+      <li>Sushi</li>
+      <li>Palabok</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Playing basketball</li>
+      <li>Cooking</li>
+      <li>Drawing</li>
+    </ul>
+  </section>
+  <div id="footer">
+    <h2 id="footer-details">Made by RHEA MAE CLEMENTE | © 2025 All Rights Reserved.</h2>
+    <div class="social-media-links">
+      <a href="https://www.facebook.com/Rheyyyz/">Facebook</a>
+      <a href="https://www.instagram.com/urmasc_rheyy/">Instagram</a>
+      
+    </div>
+  </div>
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+       for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+           tabcontent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    
+    function openModal() {
+      document.getElementById("resumeModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("resumeModal").style.display = "none";
+    }
+    </script>
+    <script>
+        function toggleZoom(img) {
+            img.classList.toggle("zoomed");
+        }
+        
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quizzes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+       
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="quizzes.html">Quizzes</a></li>
+           <li><a href="projects.html">Projects</a></li>
+           <li><a href="contacts.html">Contacts</a></li>
+ 
+        </ul>
+      </nav> 
+      <body>
+
+        <h1 style="text-align: center;">Quizzes</h1>
+      <h1>PRE TEST & POST TEST  & LONG QUIZ/MIDTERM RESULT & BLOG </h1>
+        <h2>PRE-TEST RESULT</h2>
+        <div class="quiz-gallery">
+            <img src="PRE-TEST1.png" alt="pre-test">
+            <img src="PRE-TEST2.png" alt="pre-test">
+            <img src="PRE-TEST3.png" alt="pre-test">
+            <img src="PRE-TEST4.png" alt="pre-test">
+            <img src="PRE-TEST5.png" alt="pre-test">
+          </div>
+        </div>
+       <br>
+
+        <div class="quiz-gallery">
+        <h2>POST-TEST RESULT</h2>
+      
+          <div class="test-grid">
+            
+            <img src="post-test1.jpg" alt="post-test">
+            
+            <img src="post-test2.jpg" alt="post-test">
+           
+            <img src="post-test3.jpg" alt="post-test">
+            
+            <img src="post-test4.jpg" alt="post-test">
+            
+            <img src="post-test5.jpg" alt="post-test">
+          </div>
+        </div>
+      <br>
+        <div class="card">
+          <h2>Midterm and Long Quiz</h2>
+          <div class="test-grid">
+            <img src="MIDTERM EXAM.jpg" alt="midterm">
+            <img src="LONG QUIZ.jpg" alt="long quiz midterm">
+          <br>
+          </div>
+          <h2>BLOG SCORE</h2>
+          <div class="quiz-gallery">
+          <div class="quiz-item">
+              <img src="blog1.jpg" alt="blog">
+
+              <div class="quiz-item">
+                <img src="blog2.jpg" alt="blog">
+      </section>
+        
+      <br>
+      <br>
+      <div id="footer">
+        <h2 id="footer-details">Made by RHEA MAE CLEMENTE | © 2025 All Rights Reserved.</h2>
+        <div class="social-media-links">
+          <a href="https://www.facebook.com/Rheyyyz/">Facebook</a>
+          <a href="https://www.instagram.com/urmasc_rheyy/">Instagram</a>
+          
+        </div>
+      </div>
+  </body>
+  
+  </html>
+      
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+       for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+           tabcontent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
